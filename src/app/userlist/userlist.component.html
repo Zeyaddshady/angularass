@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let user of users" 
+      (click)="removeUser(user.username)"
+      [style.color]="user.password.length < 5 ? 'red' : 'black'">
+    {{ user.username }}
+  </li>
+</ul>
