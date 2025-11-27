@@ -1,15 +1,12 @@
-/* Airbnb-style form globally */
-form {
+app-reg form {
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  max-width: 400px;
-  margin: 0 auto;
 }
 
 /* Labels */
-label {
+app-reg form label {
   font-weight: 600;
   font-size: 14px;
   color: #484848;
@@ -17,8 +14,7 @@ label {
 }
 
 /* Input fields */
-input[type="text"],
-input[type="password"] {
+app-reg form input {
   padding: 14px 16px;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -28,14 +24,13 @@ input[type="password"] {
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
+app-reg form input:focus {
   border-color: #ff385c;
   box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
 
 /* Button */
-button {
+app-reg form button {
   padding: 14px;
   background-color: #ff385c;
   color: white;
@@ -48,13 +43,13 @@ button {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-button:hover {
+app-reg form button:hover {
   background-color: #e3334f;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* Error message */
-p {
+app-reg form p {
   color: red;
   font-size: 13px;
   margin-top: -10px;

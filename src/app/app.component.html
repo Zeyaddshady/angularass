@@ -1,1 +1,7 @@
-<H1>Hello</H1>
+<div class="app-container">
+  <h2>Register</h2>
+  <app-reg (userCreated)="addUser($event)"></app-reg>
+
+  <h2 style="margin-top:30px;">Registered Users</h2>
+  <app-userlist [users]="users" (delete)="deleteUser($event)"></app-userlist>
+</div>
